@@ -2,25 +2,25 @@ package com.lewisl.orm.po;
 
 import java.io.Serializable;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+//import javax.persistence.Column;
+//import javax.persistence.Entity;
+//import javax.persistence.Id;
+//import javax.persistence.Table;
 import javax.validation.Valid;
 import javax.validation.constraints.NotNull;
 
 import org.hibernate.validator.constraints.NotBlank;
 import org.hibernate.validator.constraints.Range;
 
-@Entity(name = "Student")
-@Table(name = "student")
+//@Entity(name = "Student")
+//@Table(name = "student")
 public class Student implements Serializable {
 
 	private static final long serialVersionUID = 1L;
 	/**
 	 * Student Primary Key SID
 	 */
-	@Id
+//	@Id
 	// @NotBlank
 	// @Range(min = 0)
 	private Integer sid;
@@ -28,7 +28,7 @@ public class Student implements Serializable {
 	/**
 	 * The name of student
 	 */
-	@Column(name = "name")
+//	@Column(name = "name")
 	@NotBlank
 	private String name;
 
